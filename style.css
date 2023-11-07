@@ -1,0 +1,233 @@
+* {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+}
+
+body {
+    background-color: #1B2030;
+    color: white;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.layout-navbar{
+    width: 100%;
+    margin: 9px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-back {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+}
+
+.icon-create {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.icon-upload {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+h1 {
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+header {
+    
+    background-color: #292E41;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    border-top: 1px solid #1B2030;
+    background-color: #292E41;
+    display: flex;
+}
+
+.material-symbols-outlined {
+    text-decoration: none;
+    color: white;
+}
+
+.file {
+    display: flex;
+}
+
+.file a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    background-color: #1B2030;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #292E41;
+    border: 1px solid black;
+    width: 30%;
+    height: 30%;
+    box-shadow: 0 0px 800px 0 rgb(0, 0, 0);
+    z-index: 1000;
+    border-radius: 20px;
+}
+
+.popup.active {
+    display: block;
+}
+
+.popup.active2 {
+    display: block;
+}
+
+.hidden-form-crear-carpeta{
+    text-align: center;
+}
+
+.hidden-form-crear-carpeta button {
+    width: 50%;
+    margin-top: 10%;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.hidden-form-subir-archivo{
+    text-align: center;
+}
+
+.hidden-form-subir-archivo form{
+    padding: 30px;
+}
+
+.hidden-form-crear-carpeta form{
+    padding: 30px;
+}
+
+.hidden-form-subir-archivo button {
+    width: 50%;
+    margin-top: 10%;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+    border-radius: 9px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.layout-files {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.layout-body {
+    margin: 10px 0px;
+}
+
+.file {
+    padding: 6px;
+    align-items: center;
+    width: 92%;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+    border-radius: 10px;
+}
+
+.file a {
+    width: 40%;
+    margin-right: 10%;
+    margin-left: 20%;
+}
+
+.file button {
+    color: red;
+    cursor: pointer;
+    border: 2px solid #16171e;
+    padding: 4px;
+    background-color: #3d4152;
+}
+
+@media (max-width: 768px) {
+    .popup {
+        width: 60%;
+    }
+
+    .hidden-form-subir-archivo form{
+        padding: 20px;
+    }
+    
+    .hidden-form-crear-carpeta form{
+        padding: 20px;
+    }
+
+    .file {
+        padding: 13px;
+        align-items: center;
+        width: 92%;
+        margin: 0 auto;
+        border-bottom: 1px solid white;
+        border-radius: 10px;
+    }
+}
+
+.fondo {
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 999;
+}
+
+.fondo.active2 {
+    display: block;
+}
+
+.icon-back-form-create button {
+    margin-top: 0;
+    width: 35px;
+    background-color: #5d5f68;
+}
+
+.icon-back-form-update button{
+    margin-top: 0;
+    width: 35px;
+    background-color: #5d5f68;
+}
+
+.icon-back-form-create span{
+    color: red;
+    
+}
+
+.icon-back-form-update span{
+    color: red;
+}
